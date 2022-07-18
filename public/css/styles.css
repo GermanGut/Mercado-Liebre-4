@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import './home.css';
+
+
+header,
+main {
+    background-color: #EAC926;
+    font-family: var(--tipografiaGeneral);
+}
+
+:root {
+    box-sizing: border-box;
+    font-family: var(--tipografiaGeneral);
+
+    --tipografiaGeneral: 'Roboto';
+    --colorAzul: #03264C;
+    --colorCeleste: #1259c3;
+    --colorGrisOscuro: #666;
+    --colorGrisClaro: #ebebeb;
+    --colorVerde: #39b54a;
+}
+
+/*  HEADER */
+
+.home__header-logo {
+    width: 125px;
+    margin: 20px 0 20px 10px;
+}
+
+.header__menu,
+.home__header__cuotas {
+    margin-left: -35px;
+    font-size: 12px;
+}
+
+.home__header__tarjetaHand {
+    margin-left: 15px;
+}
+
+.home__header__cuotas {
+    margin-left: 5px;
+}
+
+.home__header--dolarHand,
+.home__header__cuotas {
+    display: inline;
+}
+
+.header__menu .creaCuenta,
+.creaCuentaIcon {
+    display: inline;
+}
+
+.ingresa,
+.ingresaIcon {
+    display: inline;
+}
+
+.misCompras,
+.misComprasIcon {
+    display: inline;
+}
+
+.home__header__tarjetaHand {
+    display: inline;
+}
+
+.main__section__visita,
+.main__section__ofertas {
+    font-size: 24px;
+}
+
+/* MAIN */
+.main {
+    background-color: white;
+    background-position: center;
+}
+
+.main precio {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.main__section__visita--precio,
+.main__section__ofertas--precio {
+    font-size: 18px;
+}
+
+.main__section__ofertas--descuento,
+.main__section__ofertas--descuento {
+    font-size: 16px;
+}
+
+.home__header__search {
+    display: inline-block;
+}
+
+.home__header__cuotas {
+    text-align: center;
+}
+
+.header__burger--menu {
+    text-align: center;
+    color: white;
+    background-color: var(--colorCeleste);
+    width: 40px;
+    height: 30px;
+    margin: auto;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+.main__section {
+    margin-top: 10px;
+}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    font-family: var(--tipografiaGeneral);
+    color: var(--colorGrisOscuro);
+    font-size: 16px;
+    margin-top: 60px;
+}
+
+.footer__tarjeta {
+    margin-bottom: 60px;
+}
+
+.footer__envio {
+    margin-bottom: 60px;
+}
+
+.footer__iconTarjeta,
+.footer__iconEnvio,
+.footer__iconSeguridad {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--colorCeleste);
+}
+
+.footer h4 {
+    margin-bottom: 5px;
+}
+
+.footer__copyright {
+    font-size: 12px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 60px;
+}
+
+
+/* ADAPTATIVO */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--colorGrisClaro);
+}
+
+
+.main__section__ofertas--descuento,
+.main__section__visita--descuento {
+    color: var(--colorVerde);
+}
+
+.logo--envio {
+    display: flex;
+    justify-content: flex-start;
+    color: var(--colorVerde);
+}
+
+.article {
+    margin-top: 10px;
+}
+
+.main__section__article,
+.main__section__ofertas__article {
+    border-top: 1px solid #ebebeb;
+    background-color: white;
+    padding: 15px;
+    margin: 15px;
+}
+
+i.fa-solid.fa-truck {
+    color: var(--colorVerde);
+    border-radius: 200px;
+    border: 1px solid var(--colorVerde);
+    padding: 10px;
+}
+
+.footer{
+    margin: 10%
+}
+
+
+
+@media(max-width:360px) {
+    h4,
+    .header__menu {
+        display: none;
+    }
+}
+
+
+
+/* TABLET */
+@media(min-width:361px) {
+    body {
+        box-shadow: 0px 0px 10px rgb (100, 100, 100);
+    }
+
+    .header__burger--menu {
+        display: none;
+    }
+}
+
+
+/* DESKTOP */
+@media(min-width:769px) {
+    body {
+        box-shadow: 0px 0px 10px rgb (100, 100, 100);
+    }
+
+    .header__burger--menu {
+        display: none;
+    }
+}
