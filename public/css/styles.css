@@ -22,6 +22,12 @@ main {
 
 /*  HEADER */
 
+* {
+    margin: 0 px;
+    padding: 0 px;
+    box-sizing: border-box;
+}
+
 .home__header-logo {
     width: 125px;
     margin: 20px 0 20px 10px;
@@ -134,6 +140,8 @@ a {
 
 .footer__envio {
     margin-bottom: 60px;
+
+
 }
 
 .footer__iconTarjeta,
@@ -171,9 +179,22 @@ a {
 }
 
 .logo--envio {
-    display: flex;
+    /* display: flex;
     justify-content: flex-start;
-    color: var(--colorVerde);
+    color: var(--colorVerde); */
+
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+
 }
 
 .article {
@@ -195,13 +216,29 @@ i.fa-solid.fa-truck {
     padding: 10px;
 }
 
-.footer{
+.main__section__precios{
+    display: flex;
+}
+
+.main__section__visita--precio, .main__section__ofertas--precio{
+    width: 30%;
+}
+
+.main__section__visita--descuento, .main__section__ofertas--descuento{
+    width: 50%;
+}
+
+
+
+/* FOOTER */
+.footer {
     margin: 10%
 }
 
 
 
 @media(max-width:360px) {
+
     h4,
     .header__menu {
         display: none;
